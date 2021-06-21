@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    
+    <servlet>
+        <servlet-name>User_Reg</servlet-name>
+        <servlet-class>Online_Election_System.User_register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>User_Reg</servlet-name>
+        <url-pattern>/user_reg</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Admin</servlet-name>
+        <servlet-class>Online_Election_System.Admin_login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Admin</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Add_elections</servlet-name>
+        <servlet-class>Online_Election_System.Add_election</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Add_elections</servlet-name>
+        <url-pattern>/add_election</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>View_image</servlet-name>
+        <servlet-class>Online_Election_System.Getimage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>View_image</servlet-name>
+        <url-pattern>/Getimage</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
