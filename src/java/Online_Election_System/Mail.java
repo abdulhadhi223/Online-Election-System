@@ -32,7 +32,7 @@ public static boolean secretMail(String msg, String name, String email) {
         Session session = Session.getDefaultInstance(props,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication("computercloud90@gmail.com", "Cloud@123");
+                        return new PasswordAuthentication("crypt90@gmail.com", "cryptoo@123");
                     }
                 });
 
